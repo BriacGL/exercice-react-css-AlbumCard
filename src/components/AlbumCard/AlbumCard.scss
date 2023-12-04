@@ -1,0 +1,56 @@
+.card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.album-cover {
+    width: 100px;
+    height: 100px;
+    background-color: #eee; 
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.album-title, .release-year {
+    font-size: 1em;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.rating {
+    display: flex;
+    margin-top: 10px;
+
+    label {
+    display: block;
+    margin-right: 5px;
+    cursor: pointer;
+
+    input {
+        display: none;
+
+        &:checked + .star {
+        color: #ffd700;
+        }
+    }
+    }
+
+    .star {
+    font-size: 20px;
+    color: #ccc;
+    }
+}
